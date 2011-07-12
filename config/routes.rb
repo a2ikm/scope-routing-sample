@@ -4,6 +4,7 @@ ScopeRoutingSample::Application.routes.draw do
   end
   
   resources :users
+  root :to => "users#index"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
