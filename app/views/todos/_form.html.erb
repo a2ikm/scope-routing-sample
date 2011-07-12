@@ -1,4 +1,4 @@
-<%= form_for(@todo) do |f| %>
+<%= form_for(@todo, :url => (@todo.persisted? ? todo_path(:id => @todo.id, :uid => @uid) : todos_path(:uid => @uid))) do |f| %>
   <% if @todo.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@todo.errors.count, "error") %> prohibited this todo from being saved:</h2>

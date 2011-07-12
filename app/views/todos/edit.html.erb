@@ -2,5 +2,5 @@
 
 <%= render 'form' %>
 
-<%= link_to 'Show', @todo %> |
-<%= link_to 'Back', todos_path %>
+<%= link_to 'Show', todo_path(:uid => @uid, :id => @todo) %> |
+<%= link_to 'Back', todos_path(:uid => @uid) %>

@@ -11,5 +11,5 @@
 </p>
 
 
-<%= link_to 'Edit', edit_todo_path(@todo) %> |
-<%= link_to 'Back', todos_path %>
+<%= link_to 'Edit', edit_todo_path(:uid => @uid, :id => @todo.id) %> |
+<%= link_to 'Back', todos_path(:uid => @uid) %>

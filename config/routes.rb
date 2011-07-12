@@ -1,5 +1,9 @@
 ScopeRoutingSample::Application.routes.draw do
-  resources :todos
+  scope ':uid' do
+    resources :todos
+  end
+  
+  resources :users
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
